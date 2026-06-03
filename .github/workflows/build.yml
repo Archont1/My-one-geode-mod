@@ -15,5 +15,5 @@ jobs:
           target: 'Android64'
       - uses: actions/upload-artifact@v4
         with:
-          name: My-Android-Mod
+          name: Geode-Mod-Android64
           path: build/*.geode
