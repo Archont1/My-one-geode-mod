@@ -17,7 +17,7 @@ $on_mod(Loaded) {
             case 3: result = num0 * num1; break;
             case 4:
                 if (num1 == 0) {
-                    Notification::create("Error: division by zero!", Notification::Icon::Error)->show();
+                    Notification::create("Error: division by zero!", NotificationIcon::Error)->show();
                     result = 0;
                 } else {
                     result = num0 / num1;
@@ -27,7 +27,7 @@ $on_mod(Loaded) {
         }
 
         if (!(op == 4 && num1 == 0)) {
-            Notification::create(fmt::format("Result: {}", result), Notification::Icon::Info)->show();
+            Notification::create(fmt::format("Result: {}", result), NotificationIcon::Info)->show();
         }
 
         Mod::get()->setSettingValue<bool>("Answer", false);
