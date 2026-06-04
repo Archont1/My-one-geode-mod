@@ -13,5 +13,5 @@ jobs:
           target: 'Android64'
       - uses: actions/upload-artifact@v4
         with:
-          name: My-Mod
+          name: Calculator-in-settings
           path: build/*.geode
