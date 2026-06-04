@@ -1,0 +1,45 @@
+{
+    "name": "Calculator-in-settings",
+    "version": "1.0.2",
+    "links": {},
+    "developer": "Archont001",
+    "geode": "5.3.0",
+    "id": "archont001.calculator-in-settings",
+    "gd": {
+        "android": "2.2081"
+    },
+    "tags": [],
+    "description": "",
+
+
+
+    "settings": {
+        "Arithmetic": { "type": "title" },
+        "num0": {
+            "type": "float",
+            "name": "Number_one",
+            "default": 0
+        },
+
+        "Operation": {
+            "type": "int",
+            "default": 0,
+            "min": 1,
+            "max": 4,
+            "description": "1=plus, 2=minus, 3=multiply, 4=divide."
+        },
+
+        "num1": {
+            "type": "float",
+            "name": "Number_two",
+            "default": 0,
+            "enable-if": "Operation != 0"
+        },
+
+        "Answer": {
+            "type": "bool",
+            "default": false,
+            "enable-if": "Operation != 0"
+        }
+    }
+}
