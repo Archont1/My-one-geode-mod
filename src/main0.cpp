@@ -3,7 +3,7 @@
 using namespace geode::prelude;
 
 $on_mod(Loaded) {
-    l
+    
 
         double num0 = Mod::get()->getSettingValue<double>("num0");
         double num1 = Mod::get()->getSettingValue<double>("num1");
@@ -27,7 +27,7 @@ $on_mod(Loaded) {
 
         if (!(op == 4 && num1 == 0)) {
             Notification::create(fmt::format("Result: {}", result), NotificationIcon::Info)->show();
-        }
+        
 
     
     });
