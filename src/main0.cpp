@@ -3,8 +3,7 @@
 using namespace geode::prelude;
 
 $on_mod(Loaded) {
-    listenForSettingChanges<bool>("Answer", [](bool value) {
-        if (!value) return;
+    l
 
         double num0 = Mod::get()->getSettingValue<double>("num0");
         double num1 = Mod::get()->getSettingValue<double>("num1");
@@ -30,6 +29,6 @@ $on_mod(Loaded) {
             Notification::create(fmt::format("Result: {}", result), NotificationIcon::Info)->show();
         }
 
-        Mod::get()->setSettingValue<bool>("Answer", false);
+    
     });
 }
