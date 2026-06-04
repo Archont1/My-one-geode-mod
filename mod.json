@@ -26,7 +26,7 @@
             "default": 0,
             "min": 1,
             "max": 4,
-            "description": "1=plus, 2=minus, 3=multiply, 4=divide."
+            "description": "1 = plus, 2 = minus, 3 = multiply, 4 = divide."
         },
 
         "num1": {
