@@ -1,8 +1,10 @@
-name: Build Geode Mod
+name: My-one-geode-mod
+
 on:
   push:
     branches: [ "main" ]
   workflow_dispatch:
+
 jobs:
   build-android:
     runs-on: ubuntu-latest
@@ -13,5 +15,41 @@ jobs:
           target: 'Android64'
       - uses: actions/upload-artifact@v4
         with:
-          name: Calculator-in-settings
+          name: Calculator-Android
+          path: build/*.geode
+
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: geode-sdk/build-geode-mod@main
+        with:
+          target: 'win'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Calculator-Windows
+          path: build/*.geode
+
+  build-mac:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: geode-sdk/build-geode-mod@main
+        with:
+          target: 'mac'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Calculator-macOS
+          path: build/*.geode
+
+  build-ios:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: geode-sdk/build-geode-mod@main
+        with:
+          target: 'ios'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Calculator-iOS
           path: build/*.geode
