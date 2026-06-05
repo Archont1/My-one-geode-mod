@@ -42,12 +42,6 @@ $on_mod(Loaded) {
 
     };
 
-    listenForSettingChanges<double>("num0", [calculate](double) { calculate(); });
-    listenForSettingChanges<double>("num1", [calculate](double) { calculate(); });
-    listenForSettingChanges<int64_t>("Operation", [calculate](int64_t) { calculate(); });
+    listenForSettingChanges<double>("Answer", [calculate](result) { calculate(); });
     
-        isResetting = true;
-        Mod::get()->setSettingValue<double>("num0", 0.0);
-        Mod::get()->setSettingValue<double>("num1", 0.0);
-        isResetting = false;
 }
