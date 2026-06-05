@@ -6,7 +6,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  
   build:
     strategy:
       fail-fast: false
@@ -18,15 +17,15 @@ jobs:
           - name: macOS
             os: macos-latest
             target: mac
-          - name: Android64
-            os: ubuntu-latest
-            target: Android64
-          - name: Android32                
-            os: ubuntu-latest
-            target: Android32
           - name: iOS
             os: macos-latest
             target: ios
+          - name: Android32
+            os: ubuntu-latest
+            target: android32
+          - name: Android64
+            os: ubuntu-latest
+            target: android64
 
     name: ${{ matrix.config.name }}
     runs-on: ${{ matrix.config.os }}
@@ -42,7 +41,6 @@ jobs:
           name: geode-build-${{ matrix.config.target }}
           path: build/*.geode
 
-  
   combine:
     name: Combine builds
     runs-on: ubuntu-latest
