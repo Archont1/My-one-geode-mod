@@ -1,3 +1,9 @@
+##<cy>v1.0.3</c>
+-Added support for Android 32 bit
+-Added support for Windows 
+-Added support for Mac
+-Added support for Ios
+
 ## <cy>v1.0.2</c>
 -Added logo.png
 -Added addition, subtraction, multiplication, division operations
