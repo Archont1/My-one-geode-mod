@@ -22,10 +22,10 @@ jobs:
             target: ios
           - name: Android32
             os: ubuntu-latest
-            target: android32
+            target: Android32
           - name: Android64
             os: ubuntu-latest
-            target: android64
+            target: Android64
 
     name: ${{ matrix.config.name }}
     runs-on: ${{ matrix.config.os }}
