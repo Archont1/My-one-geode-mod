@@ -18,10 +18,12 @@ $on_mod(Loaded) {
                 break;
             default: break;
         }
-        Mod::get()->setSettingValue<double>("Answer", result);
+        
     };
 
     listenForSettingChanges<double>("num0", [calculate](double) { calculate(); });
     listenForSettingChanges<double>("num1", [calculate](double) { calculate(); });
     listenForSettingChanges<int64_t>("Operation", [calculate](int64_t) { calculate(); });
+
+    Mod::get()->setSettingValue<double>("Answer", result);
 }
