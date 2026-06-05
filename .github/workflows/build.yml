@@ -1,4 +1,4 @@
-name: My-one-geode-mod
+name: Build Geode Mod
 
 on:
   push:
@@ -13,13 +13,13 @@ jobs:
         config:
           - name: Windows
             os: windows-latest
-            target: win
+            target: Win32          
           - name: macOS
             os: macos-latest
-            target: mac
+            target: MacOS          
           - name: iOS
             os: macos-latest
-            target: ios
+            target: iOS            
           - name: Android32
             os: ubuntu-latest
             target: Android32
