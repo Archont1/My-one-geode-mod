@@ -1,7 +1,9 @@
 {
     "name": "Calculator-in-settings",
     "version": "1.0.2",
-    "links": {},
+    "links": {
+    "source": "https://github.com/Archont1/My-one-geode-mod"},
+
     "developer": "Archont001",
     "geode": "5.3.0",
     "id": "archont001.calculator-in-settings",
@@ -39,7 +41,6 @@
         "type": "float",
         "default": 0,
         "description": "This is the last answer. Displayed only after reboot.",
-        "enable-if": "!(Operation >= 1 && Operation <= 4)",
          "control": {
          "slider": false
          }
