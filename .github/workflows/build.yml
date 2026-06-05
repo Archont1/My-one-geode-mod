@@ -13,7 +13,7 @@ jobs:
         config:
           - name: Windows
             os: windows-latest
-            target: Win32          
+            target: Win         
           - name: macOS
             os: macos-latest
             target: MacOS          
