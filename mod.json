@@ -38,9 +38,8 @@
         "Answer": {
         "type": "float",
         "default": 0,
-        "min": 0,
-        "max": 0,
         "description": "This is the answer.",
+        "requires-restart": true,
          "control": {
          "slider": false
          }
