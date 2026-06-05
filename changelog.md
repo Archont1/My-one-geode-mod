@@ -1,6 +1,5 @@
 ## <cy>v1.0.3</c>
 -Added support for Android 32 bit
--Added support for Windows 
 -Added support for Mac
 -Added support for Ios
 
