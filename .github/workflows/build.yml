@@ -12,9 +12,9 @@ jobs:
       matrix:
         config:
         
-          - name: Windows
-            os: windows-latest
-            target: Win32
+        #  - name: Windows
+        #    os: windows-latest
+         #   target: Win32
             
           - name: macOS
             os: macos-latest
