@@ -33,13 +33,17 @@
             "type": "float",
             "name": "Number_two",
             "default": 0
-         }
+         },
 
         "Answer": {
         "type": "float",
-        "default": "0",
+        "default": 0,
         "min": 0,
-        "max": 0.1
+        "max": 0,
+        "description": "This is the answer.",
+         "control": {
+         "slider": false
+         }
         }
 
 
