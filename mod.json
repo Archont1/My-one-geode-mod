@@ -39,7 +39,7 @@
         "type": "float",
         "default": 0,
         "description": "This is the last answer. Displayed only after reboot.",
-        "enable-if": "Operation >= 1 && Operation <= 4",
+        "enable-if": "!(Operation >= 1 && Operation <= 4)",
          "control": {
          "slider": false
          }
