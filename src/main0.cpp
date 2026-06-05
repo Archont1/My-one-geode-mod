@@ -18,7 +18,7 @@ $on_mod(Loaded) {
                 break;
             default: break;
         }
-        Mod::get()->setSettingValue<double>("Answer", result);
+        Mod::get()->setSettingValue<double>("last_answer", result);
       
       Notification::create(fmt::format("Result: {}", result), NotificationIcon::Info)->show();
     
