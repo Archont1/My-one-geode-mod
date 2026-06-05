@@ -22,9 +22,11 @@ $on_mod(Loaded) {
    };
     
     
-  listenForSettingChanges<double>("num0", [calculate](double) { calculate(); });
-  listenForSettingChanges<double>("num1", [calculate](double) { calculate(); });
-   listenForSettingChanges<int64_t>("Operation", [calculate](int64_t) { calculate(); });
+
+   listenForSettingChanges<double>("num0", [calculate](double) { calculate(); });
+    listenForSettingChanges<double>("num1", [calculate](double) { calculate(); });
+    listenForSettingChanges<int64_t>("Operation", [calculate](int64_t) { calculate(); });
+   
 
     
 }
