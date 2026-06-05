@@ -5,7 +5,7 @@ using namespace geode::prelude;
 $on_mod(Loaded) {
     static bool isResetting = false;
 
-    auto calculate = [] {
+    //auto calculate = [] {
     
         if (isResetting) {
             log::info("calculate: skipped because resetting");
@@ -40,8 +40,8 @@ $on_mod(Loaded) {
             Notification::create(fmt::format("Result: {}", result), NotificationIcon::Info)->show();
         }
 
-    };
+   // };
 
-    listenForSettingChanges<double>("Answer", [calculate](result) { calculate(); });
+    listenForSettingChanges<double>("Answer", result);
     
 }
