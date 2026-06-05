@@ -42,7 +42,7 @@ jobs:
           name: geode-build-${{ matrix.config.target }}
           path: build/*.geode
 
-  # 2. Объединение в один универсальный файл
+  
   combine:
     name: Combine builds
     runs-on: ubuntu-latest
