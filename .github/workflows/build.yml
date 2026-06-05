@@ -13,16 +13,20 @@ jobs:
         config:
           - name: Windows
             os: windows-latest
-            target: Win         
+            target: Win32
+            
           - name: macOS
             os: macos-latest
-            target: MacOS          
+            target: MacOS   
+            
           - name: iOS
             os: macos-latest
-            target: iOS            
+            target: iOS     
+            
           - name: Android32
             os: ubuntu-latest
             target: Android32
+            
           - name: Android64
             os: ubuntu-latest
             target: Android64
