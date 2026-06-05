@@ -1,7 +1,6 @@
 #include <Geode/Geode.hpp>
 #include <cstdint>
 using namespace geode::prelude;
-double result = 0;
 
 $on_mod(Loaded) {
    auto calculate = [] {
@@ -9,7 +8,7 @@ $on_mod(Loaded) {
         double num1 = Mod::get()->getSettingValue<double>("num1");
         int8_t op = static_cast<int8_t>(Mod::get()->getSettingValue<int64_t>("Operation"));
 
-        double result = 0;
+        double result = 0.0;
         switch (op) {
             case 1: result = num0 + num1; break;
             case 2: result = num0 - num1; break;
