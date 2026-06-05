@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  # 1. Сборка всех версий
+  
   build:
     strategy:
       fail-fast: false
