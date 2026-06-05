@@ -35,11 +35,10 @@
             "default": 0
          },
 
-        "Answer": {
+        "last_answer": {
         "type": "float",
         "default": 0,
-        "description": "This is the answer.",
-        "requires-restart": true,
+        "description": "This is the last answer. Displayed only after reboot.",
          "control": {
          "slider": false
          }
